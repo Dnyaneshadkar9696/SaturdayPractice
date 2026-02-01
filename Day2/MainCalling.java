@@ -52,6 +52,31 @@ public class MainCalling {
 		System.out.println("Product Prise: "+ pd.getPrise());
 		System.out.print("Discount Prise: ");
 		pd.discountPrise(20);
+
+		System.out.println();
+		
+		PrintMessage pm = new PrintMessage();
+		pm.printMessage();
+		
+		System.out.println();
+		Name nm = new Name();
+		nm.myName("Hellow my name is Dnyanesh");
+		
+		System.out.println();
+		new NonparameterizedConstructor(); 
+		
+		System.out.println();
+		
+		Book b = new Book("Atomic Habits", 450);
+		
+		System.out.println();
+		
+		Constructor2types sc = new Constructor2types(45);
+		sc.getAge();
+		
+		System.out.println();
+		Rectangle rr = new Rectangle(5, 3);
+		
 		
 		
 		
@@ -62,3 +87,4 @@ public class MainCalling {
 	}
 
 }
+
