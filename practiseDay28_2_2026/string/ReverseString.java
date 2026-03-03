@@ -181,35 +181,36 @@ public class ReverseString {
 	}
 	
 	public void nonRepeatedCharacter() {
-		
+
 		// like success so first non repeating is u
-		
+
 		String sam = "success";
-		
-		char falero;
-		for(int s = 0; s <= sam.length() -1 ; s++) {
+
+//		char faller;
+		for (int s = 0; s <= sam.length() - 1; s++) {
 			
+			// outer loop will check the string character one by one
+			// Inner loop check the first character with the hole string
+
 			char c = sam.charAt(s);
-			// it will give us s
-			for(int y = 1; y <= sam.length() -1; y++) {
+			
+			int count = 0;
+			
+			for(int j = 0 ; j <= sam.length()- 1; j++) {
 				
-//				char sam.char = sam.charAt(y);/
+				// this loop will check the s with all like s u c c e s s
 				
-				if( c == sam.charAt(y)) {
-					continue;
-					
+				if( c == sam.charAt(j)) {
+					count++;
 				}
-				else if ( c != sam.charAt(y)) {
-					System.out.println(c);
-					break;
-				}
-				
-				
-				
 			}
 			
-			
+			if(count == 1) {
+				System.out.println("First Repeated String : " + c);
+				break;
+			}
 		}
 	}
 
 }
+
